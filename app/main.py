@@ -27,8 +27,7 @@ class CarWashStation:
                 * self.average_rating / self.distance_from_city_center)
 
     def wash_single_car(self, car: Car) -> None:
-        if self.validate_car(car):
-            car.clean_mark = self.clean_power
+        car.clean_mark = self.clean_power
 
     def validate_car(self, car: Car) -> bool:
         return car.clean_mark < self.clean_power
